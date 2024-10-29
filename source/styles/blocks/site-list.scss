@@ -1,0 +1,32 @@
+.site-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.site-list__item--teacher {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.site-list__item a {
+  text-decoration: none;
+  color: $base-color-text;
+  font-size: 28px;
+  line-height: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 20px;
+    display: block;
+    padding: 15px;
+  }
+
+  &:hover {
+    @media (min-width: $desktop-width) {
+      opacity: 0.6;
+    }
+  }
+}

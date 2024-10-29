@@ -1,0 +1,17 @@
+.logo__image,
+.logo__link {
+  width: 114px;
+  height: 114px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 136px;
+    height: 129px;
+  }
+
+  &:hover {
+    @media (min-width: $desktop-width) {
+      opacity: 0.6;
+    }
+  }
+}

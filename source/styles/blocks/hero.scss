@@ -1,0 +1,78 @@
+.hero {
+  height: 600px;
+  background-image: url("./../../images/hero-bg-mobile@2x.jpeg");
+  background-repeat: no-repeat;
+  /* background-size: 320px 600px; */
+  background-size: cover;
+  padding-top: 150px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 814px;
+    background-image: url("./../../images/hero-bg-tablet@2x.jpeg");
+  }
+}
+
+/* .hero::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  margin: 0 0 10px;
+  top: 152px;
+  right: 12px;
+  transform: rotate(-5deg);
+  padding: 0 0 0 5px;
+  background-color: $light;
+  opacity: 0.95;
+  border-radius: 5px;
+  text-align: center;
+} */
+
+.hero__wrapper {
+  width: 90%;
+  min-height: 300px;
+  margin: 0 auto;
+  /* position: absolute;
+  top: 152px;
+  right: 12px; */
+  transform: rotate(-5deg);
+  padding: 5px 0 20px 5px;
+  background-color: $light;
+  opacity: 0.95;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.hero__wrapper-title {
+  margin: 0 0 10px;
+}
+
+.hero__wrapper-title span {
+  color: $bg-color-two;
+  text-shadow:
+    -1px -1px 0 $base-color-text,
+    1px -1px 0 $base-color-text,
+    -1px  1px 0 $base-color-text,
+    1px  1px 0 $base-color-text,
+    -2px -2px 0 $base-color-text,
+    2px -2px 0 $base-color-text,
+    -2px  2px 0 $base-color-text,
+    2px  2px 0 $base-color-text;
+}
+
+.hero__wrapper-text {
+  margin: 0 0 20px;
+}
+
+.hero__wrapper-button {
+  width: 180px;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 33px;
+  padding: 14px 12px;
+  /* position: absolute;
+  top: 203px;
+  right: 48px; */
+  background-color: $bg-color-one;
+  border: 2px solid $base-color-text;
+}

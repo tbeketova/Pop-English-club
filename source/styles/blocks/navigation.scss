@@ -1,0 +1,100 @@
+.navigation {
+  /* ff */
+}
+
+.navigation__wrapper {
+  width: 270px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  background-image: url("./../../images/decor/header-bg-nav-mobile@1x.png");
+  background-repeat: no-repeat;
+  border: 2px solid $base-color-text;
+
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    position: static;
+    background-image: none;
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navigation__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+  }
+}
+
+.navigation__toggle {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation--closed .toggle {
+  background-image: url("../../icons/button-toggle.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 45px;
+}
+
+.navigation--closed .navigation__wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.navigation--opened .toggle {
+  top: 25px;
+  background-image: url("../../icons/close-toggle.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 47px;
+}
+
+.navigation--opened .navigation__wrapper {
+  top: 100px;
+}
+
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation--nojs .navigation__wrapper {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.navigation__button {
+  @media (min-width: $tablet-width) {
+    width: 157px;
+    padding: 16px;
+    background-color: $bg-color-one;
+    border: 2px solid $base-color-text;
+  }
+
+  &:hover {
+    @media (min-width: $desktop-width) {
+      opacity: 0.6;
+    }
+  }
+}
+
+.navigation__social {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

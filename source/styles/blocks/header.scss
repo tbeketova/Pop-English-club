@@ -1,0 +1,35 @@
+.header {
+  background-color: $light;
+  border-bottom: 2px solid $base-color-text;
+  z-index: 2;
+  padding: 0 20px 0 0;
+
+  @media (min-width: $tablet-width) {
+    min-height: 109px;
+  }
+}
+
+.header__wrapper {
+  min-height: 100px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 109px;
+    display: flex;
+    align-items: center;
+    margin-left: 145px;
+  }
+}
+
+.header__wrapper-img {
+  width: 114px;
+  height: 114px;
+  position: absolute;
+  top: -5px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 136px;
+    height: 136px;
+    top: -14px;
+  }
+}
